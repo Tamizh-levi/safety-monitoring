@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.idea/
+*.log
+*.pt
+datasets/
+detect_fallen.v1i.yolov8/
+intruder_logs/
+reminder_audio/
+whatsapp_profile/
+*.jpg
+*.png
+*.mp3

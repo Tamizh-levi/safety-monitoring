@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Monitoring Dashboard</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #005a9e;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        /* Main Content Area */
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+            padding: 1.5rem;
+            gap: 1.5rem;
+        }
+
+        /* Video Feed Section */
+        .video-section {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .video-feed {
+            background-color: #000;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .video-feed img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        /* Dashboard and Controls Section */
+        .dashboard-controls {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        /* Patient Info & Alerts Panel */
+        .info-panel, .controls-panel {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-panel h2, .controls-panel h2 {
+            margin-top: 0;
+            font-size: 1.4rem;
+            color: #005a9e;
+            border-bottom: 2px solid #eef2f7;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .patient-info p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        .alerts-log {
+            margin-top: 1.5rem;
+        }
+
+        .alerts-log h3 {
+            font-size: 1.2rem;
+            color: #d9534f;
+            margin-bottom: 0.5rem;
+        }
+
+        .alerts-log ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            height: 200px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 0.5rem;
+        }
+
+        .alerts-log li {
+            background-color: #fbeaea;
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: #a94442;
+            border-left: 4px solid #d9534f;
+        }
+
+        /* Controls Panel */
+        .controls-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        .control-btn {
+            padding: 0.75rem;
+            font-size: 0.95rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            background-color: #e7e7e7;
+            color: #333;
+            text-align: center;
+        }
+
+        .control-btn.active {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+        }
+
+        .control-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .main-container {
+                flex-direction: column;
+            }
+            .dashboard-controls {
+                flex-direction: row;
+            }
+            .info-panel, .controls-panel {
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-controls {
+                flex-direction: column;
+            }
+            .controls-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Patient Monitoring Dashboard</h1>
+    </header>
+
+    <div class="main-container">
+        <section class="video-section">
+            <div class="video-feed">
+                <!-- This now points to the Flask streaming route -->
+                <img id="video-stream" src="{{ url_for('video_feed') }}" alt="Patient Room Feed">
+            </div>
+        </section>
+
+        <aside class="dashboard-controls">
+            <section class="info-panel">
+                <h2>Patient Information</h2>
+                <div class="patient-info">
+                    <p><strong>ID:</strong> <span id="patient-id">PAT001</span></p>
+                    <p><strong>Name:</strong> <span id="patient-name">Jane Doe</span></p>
+                    <p><strong>Room:</strong> <span id="patient-room">302-A</span></p>
+                </div>
+                <div class="alerts-log">
+                    <h3>Recent Alerts</h3>
+                    <ul id="alerts-list">
+                        <li>No alerts to show.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="controls-panel">
+                <h2>Monitoring Controls</h2>
+                <div class="controls-grid">
+                    <button class="control-btn" id="btn-cough">Cough Detection</button>
+                    <button class="control-btn" id="btn-unknown">Unknown Person</button>
+                    <button class="control-btn" id="btn-unidentified">Unidentified Person</button>
+                    <button class="control-btn" id="btn-bed-exit">Bed Exit</button>
+                    <button class="control-btn" id="btn-stroke">Stroke Detection</button>
+                    <button class="control-btn" id="btn-knife">Knife Detection</button>
+                    <button class="control-btn" id="btn-crowd">Crowd Alert</button>
+                    <button class="control-btn" id="btn-gestures">Gestures</button>
+                    <button class="control-btn" id="btn-voice">Voice Commands</button>
+                </div>
+            </section>
+        </aside>
+    </div>
+
+    <!-- Include the Socket.IO client library -->
+    <script src="https://cdn.socket.io/4.5.2/socket.io.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Establish a WebSocket connection to the server
+            const socket = io();
+
+            const buttons = document.querySelectorAll('.control-btn');
+            const alertsList = document.getElementById('alerts-list');
+
+            socket.on('connect', () => {
+                console.log('Connected to the server!');
+            });
+
+            // Listen for the initial state of buttons from the server
+            socket.on('initial_states', (states) => {
+                console.log('Received initial states:', states);
+                const featureMap = {
+                    'cough_detection_active': 'btn-cough',
+                    'unknown_person_active': 'btn-unknown',
+                    'unidentified_person_active': 'btn-unidentified',
+                    'bed_exit_active': 'btn-bed-exit',
+                    'stroke_detection_active': 'btn-stroke',
+                    'knife_detection_active': 'btn-knife',
+                    'crowd_alert_active': 'btn-crowd',
+                    'gestures_active': 'btn-gestures',
+                    'voice_active': 'btn-voice'
+                };
+                for (const stateKey in states) {
+                    const buttonId = featureMap[stateKey];
+                    if (buttonId) {
+                        const button = document.getElementById(buttonId);
+                        if (button) {
+                            if (states[stateKey]) {
+                                button.classList.add('active');
+                            } else {
+                                button.classList.remove('active');
+                            }
+                        }
+                    }
+                }
+            });
+
+            // --- Control Button Interactivity ---
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    button.classList.toggle('active');
+                    const status = button.classList.contains('active');
+                    // Extract feature name from button ID (e.g., 'btn-cough' -> 'cough')
+                    const feature = button.id.substring(4);
+
+                    console.log(`Sending command: ${feature} -> ${status ? 'ON' : 'OFF'}`);
+                    // Send the state change to the Python backend via WebSocket
+                    socket.emit('toggle_feature', { feature: feature, status: status });
+                });
+            });
+
+            // --- Listen for Real-time Alerts from the Server ---
+            socket.on('new_alert', function(data) {
+                addAlert(data.message);
+            });
+
+            function addAlert(message) {
+                const initialMessage = alertsList.querySelector('li');
+                if (initialMessage && initialMessage.textContent === 'No alerts to show.') {
+                    alertsList.innerHTML = ''; // Clear the initial message
+                }
+
+                const li = document.createElement('li');
+                const timestamp = new Date().toLocaleTimeString();
+                li.innerHTML = `<strong>${timestamp}:</strong> ${message}`;
+
+                // Add new alert to the top of the list
+                alertsList.insertBefore(li, alertsList.firstChild);
+
+                // Limit the number of alerts shown
+                if (alertsList.children.length > 10) {
+                    alertsList.removeChild(alertsList.lastChild);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
