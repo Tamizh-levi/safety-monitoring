@@ -119,7 +119,7 @@ class WebControlServer:
                 self.alert_manager.alert_timers.pop("sadness", None)
                 self.alert_manager.alert_sent_flags.pop("sadness", None)
 
-    def run(self, host='0.0.0.0', port=5000):
+    def run(self, host='0.0.0.0', port=1000):
         """Starts the Flask server."""
         self.app.run(host=host, port=port, threaded=True, use_reloader=False)
 

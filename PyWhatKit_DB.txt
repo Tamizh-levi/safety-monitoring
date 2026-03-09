@@ -3893,3 +3893,358 @@ Time: 0:29
 Phone Number: +919345531046
 Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-01-01 00:29:41Alert Details: DANGER: High-confidence Knife Detected! (0.81)This is an automated alert.
 --------------------
+Date: 23/2/2026
+Time: 16:20
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:20:01Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:20
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:20:15Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:21
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:21:39Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:23
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:23:24Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:24
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:24:01Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:24
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:24:22Alert Details: Voice Command: Need WaterThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:24
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:24:28Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:28
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:28:05Alert Details: SAFETY VIOLATION: Missing helmet, vest, goggles, maskThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:29
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:28:50Alert Details: Unidentified PersonThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:29
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:28:54Alert Details: Unidentified PersonThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 16:29
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 16:29:02Alert Details: Unidentified PersonThis is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 17:16
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 17:16:18Alert Details: Patient is Happy (0.17)This is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 17:16
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 17:16:25Alert Details: Patient is Happy (0.18)This is an automated alert.
+--------------------
+Date: 23/2/2026
+Time: 17:20
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-23 17:20:00Alert Details: CRITICAL: Fall Detected! Immediate Action Required.This is an automated alert.
+--------------------
+Date: 24/2/2026
+Time: 15:24
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-24 15:24:15Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 24/2/2026
+Time: 15:29
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-24 15:29:13Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 24/2/2026
+Time: 17:29
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-24 17:29:18Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 26/2/2026
+Time: 21:19
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-26 21:19:33Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 27/2/2026
+Time: 14:4
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-27 14:04:37Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 27/2/2026
+Time: 14:6
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-27 14:05:48Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 27/2/2026
+Time: 14:7
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-27 14:06:54Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 27/2/2026
+Time: 14:7
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-27 14:07:40Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 27/2/2026
+Time: 18:2
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-02-27 18:02:38Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 2/3/2026
+Time: 17:57
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-02 17:56:45Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 10:5
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 10:05:27Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 10:6
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 10:05:44Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 10:9
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 10:09:25Alert Details: Potential StrokeThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 10:11
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 10:10:59Alert Details: Voice Command: Call ManagerThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 10:13
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 10:13:26Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 10:14
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 10:14:31Alert Details: Gun DetectedThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 10:15
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 10:15:30Alert Details: Knife DetectedThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 22:54
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 22:54:42Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 23:2
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 23:02:13Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 23:9
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 23:08:46Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 23:9
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 23:09:26Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 23:12
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 23:12:17Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 23:14
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 23:14:19Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 23:17
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 23:17:34Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 23:22
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 23:22:34Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 3/3/2026
+Time: 23:27
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-03 23:27:14Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:1
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:00:50Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:2
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:02:11Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:3
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:03:01Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:6
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:06:07Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:14
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:13:55Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:16
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:16:20Alert Details: Gesture: Call ManagerThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:17
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:17:29Alert Details: Voice Command: Call ManagerThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:19
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:19:35Alert Details: Potential StrokeThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 0:35
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 00:34:52Alert Details: CRITICAL: Fall Detected! Immediate Action Required.This is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 11:36
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 11:36:10Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 11:37
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 11:37:12Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 11:40
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 11:39:53Alert Details: Potential StrokeThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 11:45
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 11:45:05Alert Details: SAFETY VIOLATION: Missing helmet, vest, goggles, maskThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 12:16
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 12:16:05Alert Details: Voice Command: Need WaterThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 12:17
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 12:17:41Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 12:18
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 12:17:48Alert Details: Gesture: Call ManagerThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 13:5
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 13:05:24Alert Details: Potential StrokeThis is an automated alert.
+--------------------
+Date: 4/3/2026
+Time: 13:21
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-04 13:21:03Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 5/3/2026
+Time: 11:46
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-05 11:45:57Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 5/3/2026
+Time: 11:46
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-05 11:45:59Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 5/3/2026
+Time: 11:46
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-05 11:46:32Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 6/3/2026
+Time: 10:43
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-06 10:43:10Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 6/3/2026
+Time: 12:3
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-06 12:03:39Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 6/3/2026
+Time: 12:4
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-06 12:04:23Alert Details: Voice Command: Need WaterThis is an automated alert.
+--------------------
+Date: 6/3/2026
+Time: 12:5
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-06 12:04:47Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 6/3/2026
+Time: 12:6
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-06 12:06:26Alert Details: Patient Left BedThis is an automated alert.
+--------------------
+Date: 6/3/2026
+Time: 13:21
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-06 13:21:19Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 6/3/2026
+Time: 15:22
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-06 15:22:00Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 9/3/2026
+Time: 8:59
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-09 08:59:39Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------
+Date: 9/3/2026
+Time: 9:2
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-09 09:02:42Alert Details: Frequent Coughing Detected (1 coughs)This is an automated alert.
+--------------------
+Date: 9/3/2026
+Time: 9:52
+Phone Number: +919345531046
+Message: *** Patient Room Monitoring Alert ***Monitored Patient: tamizhvendhan (ID: PAT001)Requester/Source: tamizhvendhan (ID: PAT001)Timestamp: 2026-03-09 09:52:25Alert Details: Gesture: Need WaterThis is an automated alert.
+--------------------

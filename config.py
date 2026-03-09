@@ -17,24 +17,18 @@ class Config:
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
     # Use relative paths for portability. Place models in a 'models' directory.
-    YOLO_MODEL_PATH = os.path.join(BASE_DIR, "yolov8n.pt")
+    YOLO_MODEL_PATH = os.path.join(BASE_DIR, "yolo26n.pt")
+    # Note: Use raw strings (r"...") for paths with backslashes on Windows
+    # os.path.join with an absolute path as the second argument uses the absolute path directly
     YOLO_KNIFE_MODEL_PATH = os.path.join(BASE_DIR,
                                          r'C:\Users\sadik\knife detect\knife-detection.v4i.yolov8\runs\detect\train2\weights\best.pt')
-    YOLO_GUN_MODEL_PATH = os.path.join(BASE_DIR, "gun.pt")
-    YOLO_FALL_MODEL_PATH = os.path.join(BASE_DIR, r"C:\fall detection.v1i.yolov8\runs\detect\train\weights\fall.pt")
+    YOLO_GUN_MODEL_PATH = os.path.join(BASE_DIR, r"C:\Users\sadik\Downloads\gun-detection.v1i.yolov8\runs\detect\train\weights\best.pt")
+    YOLO_FALL_MODEL_PATH = os.path.join(BASE_DIR, r"C:\Users\sadik\data\runs\train\fall_detection_model\weights\fall.pt")
 
-    # --- FIRE/SMOKE DETECTION CONFIGURATION (NEW) ---
-    YOLO_FIRE_MODEL_PATH = os.path.join(BASE_DIR, r'C:\Users\sadik\Downloads\fire.v1i.yolov8 (1)\test\runs\detect\fire_smoke_detect4\weights\best.pt')
-    FIRE_CLASSES = ['fire']
-    FIRE_CONFIRMATION_SEC = 1 # Immediate alert for fire/smoke
-    FIRE_CONFIDENCE_THRESHOLD = 0.10 # NEW: Specific threshold for fire detection
-    FIRE_INSTANT_ALERT = False # New flag for instant fire alert
-    # --- END FIRE/SMOKE CONFIGURATION ---
-
-    # --- NEW SAFETY GEAR DETECTION CONFIGURATION ---
-    YOLO_SAFETY_MODEL_PATH = os.path.join(BASE_DIR, r"C:\Users\sadik\Downloads\fire.v1i.yolov8\civi\helmet.pt")
-    YOLO_SAFETY_CLASSES = ['Safety-Helmet', 'Reflective-Jacket']
-    # --- END NEW CONFIGURATION ---
+    # --- MISSING PATHS ADDED HERE ---
+    # Leave empty or set to None if you don't have the model file yet to avoid loading errors
+    YOLO_SAFETY_MODEL_PATH = os.path.join(BASE_DIR, r"C:\Users\sadik\vest\runs\detect\train\weights\best.pt")
+    YOLO_FIRE_MODEL_PATH = os.path.join(BASE_DIR, r"C:\Users\sadik\Downloads\fire.v1i.yolov8\runs\detect\fire_detection2\weights\best.pt")
 
     LOG_FILE_PATH = os.path.join(BASE_DIR, "patient_monitoring.log")
     REMINDER_AUDIO_DIR = os.path.join(BASE_DIR, "reminder_audio")
@@ -43,7 +37,7 @@ class Config:
     # --- Alarm Sound Asset Paths ---
     ALARM_SOUNDS_DIR = os.path.join(BASE_DIR, "alarm_sounds")
     ALARM_SOUNDS = {
-        "call_manager": os.path.join(ALARM_SOUNDS_DIR, "call_nurse.mp3"),  # UPDATED: Renamed key to call_manager
+        "call_manager": os.path.join(ALARM_SOUNDS_DIR, "call_nurse.mp3"),
         "need_water": os.path.join(ALARM_SOUNDS_DIR, "need_water.mp3"),
         "call_family": os.path.join(ALARM_SOUNDS_DIR, "call_family.mp3"),
         "cancel_request": os.path.join(ALARM_SOUNDS_DIR, "cancel_request.mp3"),
@@ -54,44 +48,34 @@ class Config:
         "stroke_alert": os.path.join(ALARM_SOUNDS_DIR, "fall_alert.mp3"),
         "fall_alert": os.path.join(ALARM_SOUNDS_DIR, "fall_alert.mp3"),
         "knife_alert": os.path.join(ALARM_SOUNDS_DIR, "knife_alert.mp3"),
-        "gun_alert": os.path.join(ALARM_SOUNDS_DIR, "knife_alert.mp3"),  # Reusing knife sound
+        "gun_alert": os.path.join(ALARM_SOUNDS_DIR, "knife_alert.mp3"),
         "cough_alert": os.path.join(ALARM_SOUNDS_DIR, "cough_alert.mp3"),
-        "drowsiness_alert": os.path.join(ALARM_SOUNDS_DIR, "fall_alert.mp3"),  # Reusing fall alert for drowsiness
-        "pain_alert": os.path.join(ALARM_SOUNDS_DIR, "fall_alert.mp3"),  # Pain alert (reusing fall alert sound)
-        "happiness_alert": os.path.join(ALARM_SOUNDS_DIR, "positive_alert.mp3"),  # ADDED: Happiness alert
-        "sadness_alert": os.path.join(ALARM_SOUNDS_DIR, "negative_alert.mp3"),  # ADDED: Sadness alert
-        "safety_alert": os.path.join(ALARM_SOUNDS_DIR, "knife_alert.mp3"), # Reusing knife alert for safety violation
-        "fire_alert": os.path.join(ALARM_SOUNDS_DIR, "knife_alert.mp3"), # ADDED: Using knife alert sound for fire/smoke
-        "help_request": os.path.join(ALARM_SOUNDS_DIR, "call_nurse.mp3"),  # NEW: Reusing nurse sound for help
-        "thank_you_response": os.path.join(ALARM_SOUNDS_DIR, "positive_alert.mp3")
-        # NEW: Reusing positive sound for thanks
+        "drowsiness_alert": os.path.join(ALARM_SOUNDS_DIR, "fall_alert.mp3"),
+        "pain_alert": os.path.join(ALARM_SOUNDS_DIR, "fall_alert.mp3"),
+        "happiness_alert": os.path.join(ALARM_SOUNDS_DIR, "positive_alert.mp3"),
+        "sadness_alert": os.path.join(ALARM_SOUNDS_DIR, "negative_alert.mp3"),
+        "help_request": os.path.join(ALARM_SOUNDS_DIR, "call_nurse.mp3"),
+        "thank_you_response": os.path.join(ALARM_SOUNDS_DIR, "positive_alert.mp3"),
+        "safety_alert": os.path.join(ALARM_SOUNDS_DIR, "negative_alert.mp3"),  # Added
+        "fire_alert": os.path.join(ALARM_SOUNDS_DIR, "negative_alert.mp3")  # Added
     }
 
     # --- System & Patient Information ---
-    VIDEO_SOURCE = 0  # Use 0 for default webcam
+    VIDEO_SOURCE = 0
     MONITORED_PATIENT_ID = "PAT001"
 
-    # --- Worker/Manager Information (NEW) ---
-    MONITORED_WORKER_ID = "WRK888"  # Mock worker ID for "help" requests
-    MONITORED_WORKER_NAME = "Supervisor Smith"  # Mock worker name
+    # --- Worker/Manager Information ---
+    MONITORED_WORKER_ID = "WRK888"
+    MONITORED_WORKER_NAME = "Supervisor Smith"
 
-    # --- DASHBOARD CONFIGURATION (NEW) ---
-    # UPDATED: Use the root path only, which the debug Flask app handles with a POST method.
-    DASHBOARD_URL = ("http://10.84.156.32:5000/api/fire_alert")
-
-    # --- Phone numbers for alerts (E.164 format, e.g., +1234567890) ---
+    # --- Phone numbers for alerts ---
     RECEIVER_PHONE_WHATSAPP = "+919345531046"
-    RECEIVER_PHONE_SMS = "+917448917940"
+    RECEIVER_PHONE_SMS = "+919345531046"
 
-    # --- Twilio Configuration (Add your credentials here) ---
-    TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
-    TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-    TWILIO_PHONE_NUMBER = os.getenv("TWILIO_PHONE_NUMBER")
-
-    # --- Port Notification Configuration (NEW) ---
-    NOTIFICATION_HOST = "127.0.0.1"  # IP address of the listener
-    NOTIFICATION_PORT = 2000         # Port to send notifications to
-    ENABLE_PORT_NOTIFICATIONS = True # Master switch for this feature
+    # --- Twilio Configuration ---
+    TWILIO_ACCOUNT_SID = "C79862b8222770870cce96bf9f2b8c84f"
+    TWILIO_AUTH_TOKEN = "b4585fa73e2af436da4d4c46ef8e312f"
+    TWILIO_PHONE_NUMBER = "+16282655983"
 
     # --- Database Configuration ---
     MONGO_URI = "mongodb://localhost:27017/"
@@ -103,15 +87,15 @@ class Config:
     # --- Detection Thresholds & Timings ---
     YOLO_CONFIDENCE_THRESHOLD = 0.7
     FACE_RECOGNITION_TOLERANCE = 0.5
-    KNIFE_HIGH_CONFIDENCE_THRESHOLD = 0.70  # Immediate, persistent knife alert
-    GUN_HIGH_CONFIDENCE_THRESHOLD = 0.70  # Immediate, persistent gun alert
-    FALL_CONFIDENCE_THRESHOLD = 0.50
-    CROWD_THRESHOLD = 4  # Number of people considered a crowd
+    KNIFE_HIGH_CONFIDENCE_THRESHOLD = 1.0
+    GUN_HIGH_CONFIDENCE_THRESHOLD = 1.0
+    FALL_CONFIDENCE_THRESHOLD = 0.70
+    CROWD_THRESHOLD = 4
     ALERT_CONFIRMATION_SEC = 3
     UNIDENTIFIED_CONFIRMATION_SEC = 2
     LOW_LIGHT_THRESHOLD = 80
     BED_EXIT_CONFIRMATION_SEC = 5
-    FALL_CONFIRMATION_SEC = 5
+    FALL_CONFIRMATION_SEC = 2
     GESTURE_CONFIRMATION_SEC = 2
     STROKE_CONFIRMATION_SEC = 4
     MOUTH_DROOP_THRESHOLD = 0.03
@@ -120,57 +104,63 @@ class Config:
     COUGH_CONFIRMATION_SEC = 2
     MOUTH_ASPECT_RATIO_THRESHOLD = 0.2
 
+    # --- Safety Gear Settings (ADDED) ---
+    # List of classes your safety model detects (must match the model's class names)
+    YOLO_SAFETY_CLASSES = ["helmet", "vest", "goggles", "mask"]
+
+    # --- Fire Detection Settings (ADDED) ---
+    FIRE_CONFIDENCE_THRESHOLD = 0.4
+
+    FIRE_CLASSES = ["fire"]
+    FIRE_INSTANT_ALERT = True
+    FIRE_CONFIRMATION_SEC = 10
+
     HEAD_FORWARD_THRESHOLD = 0.03
     COUGH_COUNT_THRESHOLD = 1
     COUGH_RESET_SEC = 60
 
+    DASHBOARD_URL = "http://10.58.95.32:5000/api/alerts"# Set to your dashboard URL
+    ENABLE_PORT_NOTIFICATIONS = True
+    NOTIFICATION_HOST = '127.0.0.1'
+    NOTIFICATION_PORT = 2000
+
     # --- Drowsiness/Fatigue Detection Settings ---
-    EYE_ASPECT_RATIO_THRESHOLD = 0.25  # Threshold for eye closure
-    INITIAL_DROWSINESS_SEC = 4  # Duration eyes must be closed before prompt
-    GESTURE_CONFIRMATION_TIMEOUT = 15  # Time patient has to respond to voice prompt
-    DROWSINESS_COOLDOWN_SEC = 8  # Time to suppress re-triggering after manual cancellation
-    SLEEP_START_TIME = "22:00"  # Start of the "safe sleep" window (24hr format)
-    SLEEP_END_TIME = "06:00"  # End of the "safe sleep" window
+    EYE_ASPECT_RATIO_THRESHOLD = 0.25
+    INITIAL_DROWSINESS_SEC = 4
+    GESTURE_CONFIRMATION_TIMEOUT = 15
+    DROWSINESS_COOLDOWN_SEC = 8
+    SLEEP_START_TIME = "22:00"
+    SLEEP_END_TIME = "06:00"
 
-    # --- Pain and Discomfort Assessment Settings (Emotion AI) ---
-    PAIN_CONFIRMATION_SEC = 1  # MODIFIED: Duration facial discomfort must be active before alerting (1 sec)
-    PAIN_INSTANT_ALERT = True # NEW: If True, t
-    # riggers alarm instantly if score > 0.3
-    FACIAL_ASYMMETRY_THRESHOLD = 0.02  # Threshold for vertical difference between key landmarks (e.g., mouth/eye)
+    # --- Pain and Discomfort Assessment Settings ---
+    PAIN_CONFIRMATION_SEC = 3
+    FACIAL_ASYMMETRY_THRESHOLD = 0.02
     PAIN_INTENSITY_THRESHOLD = 0.1
-    # Overall intensity threshold (will be higher now due to more metrics)
+    PAIN_INSTANT_ALERT = True  # Added
 
-    # NEW PAIN METRICS THRESHOLDS
-    # Lower than this value indicates significant eyebrow squeeze/furrowing
-    EYEBROW_SQUEEZE_THRESHOLD = 0.03
-    # Higher than this value indicates significant mouth asymmetry/grimace
+    EYE_SQUEEZE_THRESHOLD = 0.03
     MOUTH_ASYMMETRY_THRESHOLD = 0.035
-    # Higher deviation from baseline indicates significant eyebrow movement (raising/furrowing)
     EYEBROW_MOVEMENT_DEVIATION = 0.03
-    # Lower than this value indicates significant cheek raise (tightening)
     CHEEK_RAISE_DISTANCE_THRESHOLD = 0.04
 
     # --- Happiness/Sadness Detection Settings ---
-    EMOTION_DETECTION_CONFIRMATION_SEC = 4  # Duration emotion must be held to trigger alert/log
-    HAPPINESS_THRESHOLD = 0.17054  # ADJUSTED: Drastically lowered for sensitivity
+    EMOTION_DETECTION_CONFIRMATION_SEC = 4
+    HAPPINESS_THRESHOLD = 0.17054
     SADNESS_THRESHOLD = 0.001111
 
-    # Heuristic score for a significant frown/downturned corners (higher is sadder)
-
-    # --- Emotional Companion Settings --- (NEW)
-    COMPANION_TIMEOUT_SEC = 45  # Max duration for a single conversation
-    COMPANION_COOLDOWN_SEC = 120  # Minimum time between proactive engagements
-    # Normalized pain score threshold (0.0 to 1.0) to trigger proactive companion engagement
-    # Set below PAIN_INTENSITY_THRESHOLD (0.04) for mild distress/mood detection
+    # --- Emotional Companion Settings ---
+    COMPANION_TIMEOUT_SEC = 45
+    COMPANION_COOLDOWN_SEC = 120
     COMPANION_PROACTIVE_THRESHOLD = 0.15
-    COMPANION_TRIGGER_WORDS = ["medimind", "companion", "hello"]  # Words patient can use to start conversation
+    COMPANION_TRIGGER_WORDS = ["medimind", "companion", "hello"]
 
-    # --- Ollama Configuration (NEW) ---
+    # --- Ollama Configuration ---
     OLLAMA_API_URL = 'http://localhost:11434/api/generate'
     OLLAMA_MODEL_NAME = 'llama3'
 
     # --- Performance Settings ---
-    DETECTION_INTERVAL = 15  # Run full detection every N frames
+    DETECTION_INTERVAL = 3
+
 
     # --- Voice Recognition Settings ---
     VOICE_AMBIENT_ADJUST_DUR = 4
